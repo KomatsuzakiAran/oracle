@@ -1,0 +1,89 @@
+/* index.scss */
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  background-color: #f0f4f8; /* Light blue-gray background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 1.5em;
+  background-color: #1e88e5; /* Primary blue */
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+button {
+  display: block;
+  margin: 1.5em auto;
+  padding: 0.75em 2em;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background-color: #1e88e5; /* Primary blue */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #1565c0; /* Darker blue */
+  transform: scale(1.03);
+}
+
+button:disabled {
+  background-color: #b0bec5; /* Grayish blue for disabled state */
+  cursor: not-allowed;
+}
+
+table {
+  width: 90%;
+  max-width: 800px;
+  margin: 1em auto;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.8em;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background-color: #1e88e5; /* Primary blue for header */
+  color: white;
+  font-weight: 600;
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e3f2fd; /* Light blue for odd rows */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #bbdefb; /* Slightly darker light blue for even rows */
+}
+
+tbody tr:hover {
+  background-color: #90caf9; /* Highlighted blue for hovered rows */
+}
+
+table, th, td {
+  border: none;
+}
